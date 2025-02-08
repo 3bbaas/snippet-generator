@@ -23,6 +23,19 @@ const Input = () => {
         <input
           type="text"
           className="app__input"
+          name="scope"
+          placeholder="scope.."
+          value={context.scope}
+          onChange={(e) => context.setTabTrigger(e.target.value)}
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="off"
+          spellCheck="false"
+        />
+      </div>
+        <input
+          type="text"
+          className="app__input"
           name="tabTrigger"
           placeholder="Tab trigger…"
           value={context.tabTrigger}

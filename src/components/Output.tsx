@@ -71,7 +71,7 @@ const Output = () => {
         >
           Sublime Text
         </button>
-        <button
+        {/* <button
           className={
             context.mode === "atom"
               ? "app__button app__button--atom app__button--active"
@@ -80,7 +80,7 @@ const Output = () => {
           onClick={() => context.setMode("atom")}
         >
           Atom
-        </button>
+        </button> */}
       </div>
 
       <div className="app__halfbottom">

@@ -3,6 +3,7 @@ import { html } from "common-tags";
 const parseVSCode = (
   description: string,
   tabtrigger: string,
+  scope: string,
   snippet: string,
 ) => {
   // escape " with \"
@@ -21,6 +22,7 @@ const parseVSCode = (
   return html`
     "${description}": {
       "prefix": "${tabtrigger}",
+      "scope": "${scope}",
       "body": [
         ${newSnippet.join('\n')}
       ],
